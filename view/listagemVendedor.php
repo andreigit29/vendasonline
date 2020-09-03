@@ -92,7 +92,7 @@ require_once('rodape.php'); ?>
         },
         error: function(jqXHR, textStatus, errorThrown) {
           console.log(jqXHR.status+' - '+textStatus);
-          $alert = $('<div></div>').addClass('alert alert-success').html('<button type="button" data-dismiss="alert" class="close">×</button>'+jqXHR.status+' - '+textStatus);
+          $alert = $('<div></div>').addClass('alert alert-danger').html('<button type="button" data-dismiss="alert" class="close">×</button>'+jqXHR.status+' - '+textStatus);
 
             $alert.insertAfter($alerta);
         }
